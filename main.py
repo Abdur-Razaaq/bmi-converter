@@ -32,8 +32,10 @@ def calculate_bmi():
         resLabelText.set("You are categorised as Underweight!")
     if 18.5 < result < 25:
         resLabelText.set("You are categorised as Normal!")
-    if result > 25:
+    if 25 < result < 30:
         resLabelText.set("You are categorised as Overweight!")
+    if result > 30:
+        resLabelText.set("You are categorised as Obese")
     return
 
 
